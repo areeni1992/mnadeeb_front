@@ -41,18 +41,18 @@
     <main class="app-wrapper">
       <!-- BEGIN: Sidebar -->
       <!-- BEGIN: Sidebar -->
-      <div class="sidebar-wrapper group d-flex flex-column">
+      <div class="sidebar-wrapper overflow-hidden group d-flex flex-column">
         <div
           id="bodyOverlay"
-          class="w-screen h-screen fixed top-0 bg-slate-900 bg-opacity-50 backdrop-blur-sm z-10 hidden"
+          class="w-screen overflow-hidden h-screen fixed top-0 bg-slate-900 bg-opacity-50 backdrop-blur-sm z-10 hidden"
         ></div>
-        <div class="logo-segment border-bottom">
+        <div class="logo-segment border-bottom overflow-hidden">
           <a class="flex items-center" href="index.html">
             <h1 class="font-bold text-xl text-primary">نظام إدارة المناديب</h1>
           </a>
         </div>
         <div
-          class="sidebar-menus bg-white dark:bg-slate-800 py-2 px-4 h-[calc(100%-80px)] overflow-y-auto z-50"
+          class="sidebar-menus overflow-hidden bg-white dark:bg-slate-800 py-2 px-4 h-[calc(100%-80px)] overflow-y-auto z-50"
           id="sidebar_menus"
         >
           <ul class="sidebar-menu d-flex flex-column">
@@ -125,12 +125,14 @@
                   class="block w-full h-full object-cover rounded-full"
                 />
               </div>
-              <div class="d-flex justify-content-between align-items-center w-full">
-                
-                <span
-                  class="text-slate-600 dark:text-white text-sm font-normal items-center lg:flex hidden overflow-hidden text-ellipsis whitespace-nowrap"
-                  >Albert Flores</span
-                >
+              <div class="d-flex align-items-center w-full">
+                <span class="relative ml-2 flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                  <img class="aspect-square h-full w-full" src="https://i.pravatar.cc/150?img=1">
+                </span>
+                <div class="text-end ms-auto">
+                  <p class="font-medium text-sm">أحمد محمد</p>
+                  <p class="text-xs text-muted-foreground">مندوب</p>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings h-4 w-4"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </div>
             </button>
