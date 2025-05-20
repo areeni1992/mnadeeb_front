@@ -378,9 +378,7 @@
                             aria-labelledby="nav-home-tab"
                             tabindex="0"
                           >
-                          <h3 class="text-base text-slate-500">
-                            اليوم
-                          </h3>
+                            <h3 class="text-base text-slate-500">اليوم</h3>
                             <div class="card mt-4">
                               <div class="card-body p-6">
                                 <div class="card-text h-full">
@@ -476,9 +474,11 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="dropdown relative">
+                                    <div
+                                      class="dropdown d-flex flex-column relative"
+                                    >
                                       <button
-                                        class="text-xl text-center block w-full"
+                                        class="text-xl text-left mb-auto block w-full"
                                         type="button"
                                         id="todoDropdownMenuButton"
                                         data-bs-toggle="dropdown"
@@ -524,13 +524,200 @@
                                           </a>
                                         </li>
                                       </ul>
+                                      <div
+                                        class="flex items-center text-success"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-check h-4 w-4 ml-1"
+                                        >
+                                          <path d="M20 6 9 17l-5-5"></path></svg
+                                        ><span>تمت الموافقة</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <h3 class="text-base text-slate-500 mt-4">الأمس</h3>
+                            <div class="card mt-4">
+                              <div class="card-body p-6">
+                                <div class="card-text h-full">
+                                  <div class="flex">
+                                    <div class="flex-0 mr-6">
+                                      <div
+                                        class="author-img w-[65px] h-[88px] rounded-[40px]"
+                                      >
+                                        <img
+                                          src="https://placehold.co/100x100?text=ش"
+                                          alt="image"
+                                          width="50px"
+                                          class="w-70 h-70 rounded-full object-cover"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="flex-1">
+                                      <h4 class="mb-2 text-base">
+                                        شركة التقنية الحديثة
+                                      </h4>
+                                      <div
+                                        class="flex flex-wrap items-center mt-1"
+                                      >
+                                        <div class="flex items-center">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="14"
+                                            height="14"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide ms-1 lucide-clock h-3.5 w-3.5"
+                                          >
+                                            <circle
+                                              cx="12"
+                                              cy="12"
+                                              r="10"
+                                            ></circle>
+                                            <polyline
+                                              points="12 6 12 12 16 14"
+                                            ></polyline></svg
+                                          ><span
+                                            class="text-xs text-slate-500 text-bold"
+                                            >12:03</span
+                                          >
+                                        </div>
+                                        <div
+                                          class="flex items-center gap-1 text-sm text-muted-foreground"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="14"
+                                            height="14"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide ms-1 me-3 lucide-map-pin h-3.5 w-3.5"
+                                          >
+                                            <path
+                                              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                                            ></path>
+                                            <circle
+                                              cx="12"
+                                              cy="10"
+                                              r="3"
+                                            ></circle></svg
+                                          ><span>تم تسجيل الموقع</span>
+                                        </div>
+                                      </div>
+                                      <p
+                                        class="text-sm d-block text-muted-foreground mt-2 line-clamp-2"
+                                      >
+                                        تمت الزيارة وعرض المنتجات الجديدة.
+                                      </p>
+                                      <div
+                                        class="flex flex-wrap items-center gap-2 mt-3"
+                                      >
+                                        <div
+                                          class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
+                                        >
+                                          معلق
+                                        </div>
+                                        <div
+                                          class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs text-light px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+                                        >
+                                          تمت الموافقة
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="dropdown d-flex flex-column relative"
+                                    >
+                                      <button
+                                        class="text-xl text-left mb-auto block w-full"
+                                        type="button"
+                                        id="todoDropdownMenuButton"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                      >
+                                        <iconify-icon
+                                          icon="heroicons-outline:dots-vertical"
+                                        ></iconify-icon>
+                                      </button>
+                                      <ul
+                                        class="dropdown-menu min-w-[160px] absolute text-sm text-slate-700 dark:text-white hidden bg-white dark:bg-slate-700 shadow z-[2] float-left overflow-hidden list-none text-left rounded-lg mt-1 m-0 bg-clip-padding border-none"
+                                      >
+                                        <li>
+                                          <a
+                                            href="#"
+                                            class="w-full text-slate-600 dark:text-white font-Inter font-normal px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-600 space-x-2 rtl:space-x-reverse inline-flex items-center dark:hover:text-white"
+                                          >
+                                            <span class="text-lg leading-[0]"
+                                              ><iconify-icon
+                                                icon="gg:details-more"
+                                                width="24"
+                                                height="24"
+                                              ></iconify-icon>
+                                            </span>
+                                            <span>خيارات</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a
+                                            href="#"
+                                            class="w-full text-slate-600 dark:text-white font-Inter font-normal px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-600 space-x-2 rtl:space-x-reverse inline-flex items-center dark:hover:text-white"
+                                          >
+                                            <span class="text-lg leading-[0]"
+                                              ><iconify-icon
+                                                icon="mdi:show"
+                                                width="24"
+                                                height="24"
+                                              ></iconify-icon>
+                                            </span>
+                                            <span style="width: max-content"
+                                              >عرض التفاصيل</span
+                                            >
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div
+                                        class="flex items-center text-success"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-check h-4 w-4 ml-1"
+                                        >
+                                          <path d="M20 6 9 17l-5-5"></path></svg
+                                        ><span>تمت الموافقة</span>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                             <h3 class="text-base text-slate-500 mt-4">
-                               الأمس
+                              الأحد 18 مايو
                             </h3>
                             <div class="card mt-4">
                               <div class="card-body p-6">
@@ -621,15 +808,17 @@
                                           معلق
                                         </div>
                                         <div
-                                          class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs text-light px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+                                          class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs text-light px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-warning text-light hover:bg-primary/80"
                                         >
-                                          تمت الموافقة
+                                          يتطلب توضيح
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="dropdown relative">
+                                    <div
+                                      class="dropdown d-flex flex-column relative"
+                                    >
                                       <button
-                                        class="text-xl text-center block w-full"
+                                        class="text-xl text-left mb-auto block w-full"
                                         type="button"
                                         id="todoDropdownMenuButton"
                                         data-bs-toggle="dropdown"
@@ -675,13 +864,33 @@
                                           </a>
                                         </li>
                                       </ul>
+                                      <div
+                                        class="flex items-center text-warning"
+                                      >
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-message-circle h-4 w-4 ml-1"
+                                        >
+                                          <path
+                                            d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"
+                                          ></path></svg
+                                        ><span>يتطلب توضيح</span>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                             <h3 class="text-base text-slate-500 mt-4">
-                                الأحد 18 مايو
+                              الخميس 15 مايو
                             </h3>
                             <div class="card mt-4">
                               <div class="card-body p-6">
@@ -769,18 +978,20 @@
                                         <div
                                           class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
                                         >
-                                          معلق
+                                          تم الشراء
                                         </div>
                                         <div
-                                          class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs text-light px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+                                          class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs text-light px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-danger text-light hover:bg-primary/80"
                                         >
-                                          تمت الموافقة
+                                          مرفروض
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="dropdown relative">
+                                    <div
+                                      class="dropdown d-flex flex-column relative"
+                                    >
                                       <button
-                                        class="text-xl text-center block w-full"
+                                        class="text-xl text-left mb-auto block w-full"
                                         type="button"
                                         id="todoDropdownMenuButton"
                                         data-bs-toggle="dropdown"
@@ -826,157 +1037,25 @@
                                           </a>
                                         </li>
                                       </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <h3 class="text-base text-slate-500 mt-4">
-                                الخميس 15 مايو
-                            </h3>
-                            <div class="card mt-4">
-                              <div class="card-body p-6">
-                                <div class="card-text h-full">
-                                  <div class="flex">
-                                    <div class="flex-0 mr-6">
                                       <div
-                                        class="author-img w-[65px] h-[88px] rounded-[40px]"
+                                        class="flex items-center text-danger"
                                       >
-                                        <img
-                                          src="https://placehold.co/100x100?text=ش"
-                                          alt="image"
-                                          width="50px"
-                                          class="w-70 h-70 rounded-full object-cover"
-                                        />
-                                      </div>
-                                    </div>
-                                    <div class="flex-1">
-                                      <h4 class="mb-2 text-base">
-                                        شركة التقنية الحديثة
-                                      </h4>
-                                      <div
-                                        class="flex flex-wrap items-center mt-1"
-                                      >
-                                        <div class="flex items-center">
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="14"
-                                            height="14"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide ms-1 lucide-clock h-3.5 w-3.5"
-                                          >
-                                            <circle
-                                              cx="12"
-                                              cy="12"
-                                              r="10"
-                                            ></circle>
-                                            <polyline
-                                              points="12 6 12 12 16 14"
-                                            ></polyline></svg
-                                          ><span
-                                            class="text-xs text-slate-500 text-bold"
-                                            >12:03</span
-                                          >
-                                        </div>
-                                        <div
-                                          class="flex items-center gap-1 text-sm text-muted-foreground"
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="lucide lucide-x h-4 w-4 ml-1"
                                         >
-                                          <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="14"
-                                            height="14"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide ms-1 me-3 lucide-map-pin h-3.5 w-3.5"
-                                          >
-                                            <path
-                                              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                                            ></path>
-                                            <circle
-                                              cx="12"
-                                              cy="10"
-                                              r="3"
-                                            ></circle></svg
-                                          ><span>تم تسجيل الموقع</span>
-                                        </div>
+                                          <path d="M18 6 6 18"></path>
+                                          <path d="m6 6 12 12"></path></svg
+                                        ><span>مرفوض</span>
                                       </div>
-                                      <p
-                                        class="text-sm d-block text-muted-foreground mt-2 line-clamp-2"
-                                      >
-                                        تمت الزيارة وعرض المنتجات الجديدة.
-                                      </p>
-                                      <div
-                                        class="flex flex-wrap items-center gap-2 mt-3"
-                                      >
-                                        <div
-                                          class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground"
-                                        >
-                                          معلق
-                                        </div>
-                                        <div
-                                          class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs text-light px-3 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
-                                        >
-                                          تمت الموافقة
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="dropdown relative">
-                                      <button
-                                        class="text-xl text-center block w-full"
-                                        type="button"
-                                        id="todoDropdownMenuButton"
-                                        data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                      >
-                                        <iconify-icon
-                                          icon="heroicons-outline:dots-vertical"
-                                        ></iconify-icon>
-                                      </button>
-                                      <ul
-                                        class="dropdown-menu min-w-[160px] absolute text-sm text-slate-700 dark:text-white hidden bg-white dark:bg-slate-700 shadow z-[2] float-left overflow-hidden list-none text-left rounded-lg mt-1 m-0 bg-clip-padding border-none"
-                                      >
-                                        <li>
-                                          <a
-                                            href="#"
-                                            class="w-full text-slate-600 dark:text-white font-Inter font-normal px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-600 space-x-2 rtl:space-x-reverse inline-flex items-center dark:hover:text-white"
-                                          >
-                                            <span class="text-lg leading-[0]"
-                                              ><iconify-icon
-                                                icon="gg:details-more"
-                                                width="24"
-                                                height="24"
-                                              ></iconify-icon>
-                                            </span>
-                                            <span>خيارات</span>
-                                          </a>
-                                        </li>
-                                        <li>
-                                          <a
-                                            href="#"
-                                            class="w-full text-slate-600 dark:text-white font-Inter font-normal px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-600 space-x-2 rtl:space-x-reverse inline-flex items-center dark:hover:text-white"
-                                          >
-                                            <span class="text-lg leading-[0]"
-                                              ><iconify-icon
-                                                icon="mdi:show"
-                                                width="24"
-                                                height="24"
-                                              ></iconify-icon>
-                                            </span>
-                                            <span style="width: max-content"
-                                              >عرض التفاصيل</span
-                                            >
-                                          </a>
-                                        </li>
-                                      </ul>
                                     </div>
                                   </div>
                                 </div>

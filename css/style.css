@@ -43,3 +43,6 @@
   border-bottom: none;
   font-weight: bold;
 }
+.text-success {
+  color: #22c55e !important;
+}
