@@ -3,18 +3,24 @@
 .text-primary {
   color: #0085cc !important;
 }
-.bg-primary, .navItem.active {
+.bg-primary,
+.navItem.active {
   background: #0085cc !important;
 }
 
-*, .main-font {
+*,
+.main-font {
   font-family: "Noto Sans Arabic", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-.simplebar-content {height: 700px !important}
-.sidebar-menu{ height: 600px !important}
+.simplebar-content {
+  height: 700px !important;
+}
+.sidebar-menu {
+  height: 600px !important;
+}
 
 .analyces-card .card {
   border-left: 4px solid #0085cc;
@@ -28,4 +34,12 @@
 
 .icon {
   background: rgba(0, 133, 204, 0.1);
+}
+
+.visits-items .nav-tabs .nav-link.active {
+  background: #f1f5f9 !important;
+  color: #4b5563 !important;
+  border-color: #ccc;
+  border-bottom: none;
+  font-weight: bold;
 }
