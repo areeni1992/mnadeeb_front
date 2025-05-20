@@ -48,5 +48,5 @@
 }
 
 .clients .tab-content > .active {
-  display: grid;
+  display: grid !important;
 }
