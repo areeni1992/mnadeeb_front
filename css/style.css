@@ -46,3 +46,7 @@
 .text-success {
   color: #22c55e !important;
 }
+
+.clients .tab-content > .active {
+  display: grid;
+}

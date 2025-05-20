@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Hom | Visits</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/images/logo/favicon.svg"
+    />
+    <!-- BEGIN: Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- END: Google Font -->
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/sidebar-menu.css" />
+    <link rel="stylesheet" href="../assets/css/SimpleBar.css" />
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <!-- END: Theme CSS-->
+    <script src="../assets/js/settings.js" sync></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Noto+Sans+Arabic:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body class="font-inter dashcode-app clients" id="body_class">
+    <!-- [if IE]> <p class="browserupgrade"> You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security. </p> <![endif] -->
+    <main class="app-wrapper">
+      <!-- BEGIN: Sidebar -->
+      <!-- BEGIN: Sidebar -->
+      <div class="sidebar-wrapper overflow-hidden group d-flex flex-column">
+        <div
+          id="bodyOverlay"
+          class="w-screen overflow-hidden h-screen fixed top-0 bg-slate-900 bg-opacity-50 backdrop-blur-sm z-10 hidden"
+        ></div>
+        <div class="logo-segment border-bottom overflow-hidden">
+          <a class="flex items-center" href="index.html">
+            <h1 class="font-bold text-xl text-primary">نظام إدارة المناديب</h1>
+          </a>
+        </div>
+        <div
+          class="sidebar-menus overflow-hidden bg-white dark:bg-slate-800 py-2 px-4 h-[calc(100%-80px)] overflow-y-auto z-50"
+          id="sidebar_menus"
+        >
+          <ul class="sidebar-menu d-flex flex-column">
+            <li class="mt-3">
+              <a href="../index.html" target="_self" class="navItem">
+                <span class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chart-no-axes-column-increasing h-5 w-5 rtl-flip"
+                  >
+                    <line x1="12" x2="12" y1="20" y2="10"></line>
+                    <line x1="18" x2="18" y1="20" y2="4"></line>
+                    <line x1="6" x2="6" y1="20" y2="16"></line>
+                  </svg>
+                  <span class="d-inline-block me-3">الرئيسية</span>
+                </span>
+              </a>
+            </li>
+            <li class="mt-3">
+              <a href="visits.html" class="navItem">
+                <span class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-map h-5 w-5 rtl-flip"
+                  >
+                    <path
+                      d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"
+                    ></path>
+                    <path d="M15 5.764v15"></path>
+                    <path d="M9 3.236v15"></path>
+                  </svg>
+                  <span class="d-inline-block me-3 text-base">الزيارات</span>
+                </span>
+              </a>
+            </li>
+            <li class="mt-3">
+              <a href="clients.html" class="navItem active">
+                <span class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users h-5 w-5 rtl-flip"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span class="d-inline-block me-3 text-base"
+                    >قائمة العملاء</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li class="d-flex align-items-end"></li>
+          </ul>
+          <!-- Profile DropDown Area -->
+          <div
+            class="md:block d-flex border-top pt-2 align-items-end hidden w-auto w-full mt-auto"
+          >
+            <button
+              class="w-full text-slate-800 dark:text-white focus:ring-0 focus:outline-none font-medium rounded-lg text-sm text-center inline-flex items-center"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div
+                class="lg:h-8 lg:w-8 h-7 w-7 rounded-full flex-1 ltr:mr-[10px] rtl:ml-[10px]"
+              >
+                <img
+                  src="../assets/images/all-img/user.png"
+                  alt="user"
+                  class="block w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <div class="d-flex align-items-center w-full">
+                <span
+                  class="relative ml-2 flex h-10 w-10 shrink-0 overflow-hidden rounded-full"
+                >
+                  <img
+                    class="aspect-square h-full w-full"
+                    src="https://i.pravatar.cc/150?img=1"
+                  />
+                </span>
+                <div class="text-end ms-auto">
+                  <p class="font-medium text-sm">العملاء</p>
+                  <p class="text-xs text-muted-foreground text-slate-500">
+                    إدارة وعرض بيانات العملاء
+                  </p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-settings h-4 w-4"
+                >
+                  <path
+                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                  ></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              class="dropdown-menu z-10 hidden bg-white divide-y divide-slate-100 shadow w-44 rounded-md overflow-hidden"
+            >
+              <ul class="py-1 text-sm text-slate-800 dark:text-slate-200">
+                <li>
+                  <a
+                    href="index.html"
+                    class="block px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white font-inter text-sm text-slate-600 dark:text-white font-normal"
+                  >
+                    <iconify-icon
+                      icon="heroicons-outline:user"
+                      class="relative top-[2px] text-lg ltr:mr-1 rtl:ml-1"
+                    ></iconify-icon>
+                    <span class="font-Inter">Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="signin-one.html"
+                    class="block px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-600 dark:hover:text-white font-inter text-sm text-slate-600 dark:text-white font-normal"
+                  >
+                    <iconify-icon
+                      icon="heroicons-outline:login"
+                      class="relative top-[2px] text-lg ltr:mr-1 rtl:ml-1"
+                    ></iconify-icon>
+                    <span class="font-Inter">Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End: Sidebar -->
+
+      <div class="flex flex-col justify-between min-h-screen">
+        <div>
+          <div
+            class="content-wrapper transition-all duration-150 ltr:ml-[248px] rtl:mr-[248px]"
+            id="content_wrapper"
+          >
+            <div class="page-content">
+              <div
+                class="transition-all duration-150 container-fluid"
+                id="page_layout"
+              >
+                <div id="content_layout">
+                  <header>
+                    <!-- BEGIN: Breadcrumb -->
+                    <div class="mb-5">
+                      <ul class="m-0 p-0 list-none">
+                        <li
+                          class="inline-block relative top-[3px] text-base text-primary-500 font-Inter"
+                        >
+                          <a href="index.html">
+                            <iconify-icon
+                              icon="heroicons-outline:home"
+                            ></iconify-icon>
+                            <iconify-icon
+                              icon="heroicons-outline:chevron-right"
+                              class="relative text-slate-500 text-sm rtl:rotate-180"
+                            ></iconify-icon>
+                          </a>
+                        </li>
+                        <li
+                          class="inline-block relative text-sm text-primary-500 font-Inter"
+                        >
+                          لوحة التحكم
+                          <iconify-icon
+                            icon="heroicons-outline:chevron-right"
+                            class="relative top-[3px] text-slate-500 rtl:rotate-180"
+                          ></iconify-icon>
+                        </li>
+                        <li
+                          class="inline-block relative text-sm text-slate-500 font-Inter dark:text-white"
+                        >
+                          قائمة العملاء
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- END: BreadCrumb -->
+                    <div class="space-y-5">
+                      <div class="flex justify-between items-center">
+                        <div
+                          class="flex items-center w-full space-x-2 space-x-reverse"
+                        >
+                          <div class="relative flex-1 max-w-md">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-search absolute me-2 right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground"
+                            >
+                              <circle cx="11" cy="11" r="8"></circle>
+                              <path d="m21 21-4.3-4.3"></path></svg
+                            ><input
+                              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm pe-4"
+                              placeholder="البحث عن عميل..."
+                              value=""
+                            />
+                          </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <button
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 relative"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-bell h-4 w-4"
+                            >
+                              <path
+                                d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"
+                              ></path>
+                              <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                            </svg>
+                          </button>
+                          <button
+                            class="btn text-light bg-primary py-2 d-flex justify-content-center align-items-center"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-plus h-4 w-4 ml-2 rtl-flip"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >اضافة عميل
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+
+                  <section class="visits-items mt-5">
+                    <div class="container">
+                      <div class="row">
+                        <nav class="mb-3">
+                          <div
+                            class="nav nav-tabs justify-content-center"
+                            id="nav-tab"
+                            role="tablist"
+                          >
+                            <button
+                              class="nav-link active"
+                              id="nav-home-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#nav-home"
+                              type="button"
+                              role="tab"
+                              aria-controls="nav-home"
+                              aria-selected="true"
+                            >
+                              الكل
+                            </button>
+                            <button
+                              class="nav-link"
+                              id="nav-profile-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#nav-profile"
+                              type="button"
+                              role="tab"
+                              aria-controls="nav-profile"
+                              aria-selected="false"
+                            >
+                              اليوم
+                            </button>
+                            <button
+                              class="nav-link"
+                              id="nav-contact-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#nav-contact"
+                              type="button"
+                              role="tab"
+                              aria-controls="nav-contact"
+                              aria-selected="false"
+                            >
+                              تم العرض
+                            </button>
+                            <button
+                              class="nav-link"
+                              id="nav-contact-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#nav-contact"
+                              type="button"
+                              role="tab"
+                              aria-controls="nav-contact"
+                              aria-selected="false"
+                            >
+                              تم الشراء
+                            </button>
+                            <button
+                              class="nav-link"
+                              id="nav-contact-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#nav-contact"
+                              type="button"
+                              role="tab"
+                              aria-controls="nav-contact"
+                              aria-selected="false"
+                            >
+                              معلق
+                            </button>
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                          <div
+                            class="tab-pane fade show active grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-3"
+                            id="nav-home"
+                            role="tabpanel"
+                            aria-labelledby="nav-home-tab"
+                            tabindex="0"
+                          >
+                            <div class="rounded-lg border bg-light text-card-foreground shadow-sm p-4 cursor-pointer transition-all hover:shadow-md">
+                              <div class="flex items-start gap-4">
+                                <span class="relative flex shrink-0 overflow-hidden rounded-full h-12 w-12"><img class="aspect-square h-full w-full" src="https://placehold.co/100x100?text=ش"></span>
+                                <div class="flex-1">
+                                  <div class="flex justify-between items-start">
+                                    <h3 class="font-medium text-base">
+                                      شركة التقنية الحديثة
+                                    </h3>
+                                    <div class="inline-flex items-center rounded-full border px-2 py-0.5 text-xs text-light font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">نشط</div>
+                                        
+                                  </div>
+                                  <div class="mt-2 space-y-1 text-sm text-muted-foreground">
+                                    <div class="flex items-center gap-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle></svg><span>شارع التحلية، الرياض</span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-3.5 w-3.5">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline></svg><span>آخر زيارة: 20 مايو 2025</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="rounded-lg border bg-light text-card-foreground shadow-sm p-4 cursor-pointer transition-all hover:shadow-md">
+                              <div class="flex items-start gap-4">
+                                <span class="relative flex shrink-0 overflow-hidden rounded-full h-12 w-12"><img class="aspect-square h-full w-full" src="https://placehold.co/100x100?text=ش"></span>
+                                <div class="flex-1">
+                                  <div class="flex justify-between items-start">
+                                    <h3 class="font-medium text-base">
+                                      شركة التقنية الحديثة
+                                    </h3>
+                                    <div class="inline-flex items-center rounded-full border px-2 py-0.5 text-xs text-light font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">نشط</div>
+                                        
+                                  </div>
+                                  <div class="mt-2 space-y-1 text-sm text-muted-foreground">
+                                    <div class="flex items-center gap-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle></svg><span>شارع التحلية، الرياض</span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-3.5 w-3.5">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline></svg><span>آخر زيارة: 20 مايو 2025</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="rounded-lg border bg-light text-card-foreground shadow-sm p-4 cursor-pointer transition-all hover:shadow-md">
+                              <div class="flex items-start gap-4">
+                                <span class="relative flex shrink-0 overflow-hidden rounded-full h-12 w-12"><img class="aspect-square h-full w-full" src="https://placehold.co/100x100?text=ش"></span>
+                                <div class="flex-1">
+                                  <div class="flex justify-between items-start">
+                                    <h3 class="font-medium text-base">
+                                      شركة التقنية الحديثة
+                                    </h3>
+                                    <div class="inline-flex items-center rounded-full border px-2 py-0.5 text-xs text-light font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">نشط</div>
+                                        
+                                  </div>
+                                  <div class="mt-2 space-y-1 text-sm text-muted-foreground">
+                                    <div class="flex items-center gap-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle></svg><span>شارع التحلية، الرياض</span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-3.5 w-3.5">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline></svg><span>آخر زيارة: 20 مايو 2025</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="rounded-lg border bg-light text-card-foreground shadow-sm p-4 cursor-pointer transition-all hover:shadow-md">
+                              <div class="flex items-start gap-4">
+                                <span class="relative flex shrink-0 overflow-hidden rounded-full h-12 w-12"><img class="aspect-square h-full w-full" src="https://placehold.co/100x100?text=ش"></span>
+                                <div class="flex-1">
+                                  <div class="flex justify-between items-start">
+                                    <h3 class="font-medium text-base">
+                                      شركة التقنية الحديثة
+                                    </h3>
+                                    <div class="inline-flex items-center rounded-full border px-2 py-0.5 text-xs text-light font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">نشط</div>
+                                        
+                                  </div>
+                                  <div class="mt-2 space-y-1 text-sm text-muted-foreground">
+                                    <div class="flex items-center gap-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle></svg><span>شارع التحلية، الرياض</span>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-3.5 w-3.5">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline></svg><span>آخر زيارة: 20 مايو 2025</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tab-pane col-md-4 fade"
+                            id="nav-profile"
+                            role="tabpanel"
+                            aria-labelledby="nav-profile-tab"
+                            tabindex="0"
+                          >
+                            ...
+                          </div>
+                          <div
+                            class="tab-pane col-md-4 fade"
+                            id="nav-contact"
+                            role="tabpanel"
+                            aria-labelledby="nav-contact-tab"
+                            tabindex="0"
+                          >
+                            ...
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white bg-no-repeat custom-dropshadow footer-bg dark:bg-slate-700 flex justify-around items-center backdrop-filter backdrop-blur-[40px] fixed left-0 bottom-0 w-full z-[9999] bothrefm-0 py-[12px] px-4 md:hidden"
+        >
+          <a href="chat.html">
+            <div>
+              <span
+                class="relative cursor-pointer rounded-full text-[20px] flex flex-col items-center justify-center mb-1 dark:text-white text-slate-900"
+              >
+                <iconify-icon icon="heroicons-outline:mail"></iconify-icon>
+                <span
+                  class="absolute right-[5px] lg:hrefp-0 -hrefp-2 h-4 w-4 bg-red-500 text-[8px] font-semibold flex flex-col items-center justify-center rounded-full text-white z-[99]"
+                >
+                  10
+                </span>
+              </span>
+              <span
+                class="block text-[11px] text-slate-600 dark:text-slate-300"
+              >
+                Messages
+              </span>
+            </div>
+          </a>
+          <a
+            href="profile.html"
+            class="relative bg-white bg-no-repeat backdrop-filter backdrop-blur-[40px] rounded-full footer-bg dark:bg-slate-700 h-[65px] w-[65px] z-[-1] -mt-[40px] flex justify-center items-center"
+          >
+            <div
+              class="h-[50px] w-[50px] rounded-full relative left-[0px] hrefp-[0px] custom-dropshadow"
+            >
+              <img
+                src="../assets/images/users/user-1.jpg"
+                alt=""
+                class="w-full h-full rounded-full border-2 border-slate-100"
+              />
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <span
+                class="relative cursor-pointer rounded-full text-[20px] flex flex-col items-center justify-center mb-1 dark:text-white text-slate-900"
+              >
+                <iconify-icon icon="heroicons-outline:bell"></iconify-icon>
+                <span
+                  class="absolute right-[17px] lg:hrefp-0 -hrefp-2 h-4 w-4 bg-red-500 text-[8px] font-semibold flex flex-col items-center justify-center rounded-full text-white z-[99]"
+                >
+                  2
+                </span>
+              </span>
+              <span
+                class="block text-[11px] text-slate-600 dark:text-slate-300"
+              >
+                Notifications
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <!-- scripts -->
+    <!-- Core Js -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/tw-elements-1.0.0-alpha13.min.js"></script>
+    <script src="../assets/js/SimpleBar.js"></script>
+    <script src="../assets/js/iconify.js"></script>
+    <!-- Jquery Plugins -->
+
+    <!-- app js -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
